@@ -1,0 +1,11 @@
+#define ENG 0
+#define RU 1
+#define SYMB 2
+#define NUM 3
+#define FUNC 4
+#define LANGCH 5
+#define OPTS 6
+
+#define TAPPING_TERM 175
+#define LONG_TAPPING_TERM 300
+#define STICKY_RELEASE 500
