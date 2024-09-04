@@ -1,0 +1,74 @@
+&mt {
+    flavor = "tap-preferred";
+    tapping-term-ms = <TAPPING_TERM>;
+};
+
+&lt {
+    flavor = "tap-preferred";
+    tapping-term-ms = <TAPPING_TERM>;
+};
+
+&sk {
+    release-after-ms = <STICKY_RELEASE>;
+    quick-release;
+};
+
+&sl {
+    release-after-ms = <STICKY_RELEASE>;
+    quick-release;
+};     
+
+/ {
+
+    behaviors {
+        ls: lang_switch {
+            compatible = "zmk,behavior-lang-switch";
+            #binding-cells = <1>;
+            bindings = <&kp LANG_SW>;
+            layers = <ENG RU>;
+        };
+        ls_: lang_switch_no_layer {
+            compatible = "zmk,behavior-lang-switch";
+            #binding-cells = <1>;
+            bindings = <&kp LANG_SW>;
+            layers = <ENG RU>;
+            no-layer-switch;
+        };
+        kp_en: kp_on_eng {
+            compatible = "zmk,behavior-kp-on-lang";
+            #binding-cells = <1>;
+            bindings = <&ls_ ENG>;
+        };
+
+        ru_b_jo: ru_b_jo {
+            compatible = "zmk,behavior-tap-dance";
+            #binding-cells = <0>;
+            tapping-term-ms = <TAPPING_TERM>;
+            bindings = <&kp RU_B>, <&kp RU_JO>;
+        };
+        ru_ss_hs: ru_ss_hs {
+            compatible = "zmk,behavior-tap-dance";
+            #binding-cells = <0>;
+            tapping-term-ms = <LONG_TAPPING_TERM>;
+            bindings = <&kp RU_SS>, <&kp RU_HS>;
+        };
+        ru_sh_sch: ru_sh_sch {
+            compatible = "zmk,behavior-tap-dance";
+            #binding-cells = <0>;
+            tapping-term-ms = <LONG_TAPPING_TERM>;
+            bindings = <&kp RU_SH>, <&kp RU_SCH>;
+        };
+        bt_reset: bt_reset {
+            compatible = "zmk,behavior-tap-dance";
+            #binding-cells = <0>;
+            tapping-term-ms = <LONG_TAPPING_TERM>;
+            bindings = <&none>, <&bt BT_CLR>;
+        };
+        bt_sel0: bt_sel0 {
+            compatible = "zmk,behavior-tap-dance";
+            #binding-cells = <0>;
+            tapping-term-ms = <LONG_TAPPING_TERM>;
+            bindings = <&out OUT_TOG>, <&bt BT_SEL 0>;
+        };
+    };
+};

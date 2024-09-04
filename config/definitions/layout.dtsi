@@ -1,0 +1,58 @@
+/*                KEY POSITIONS
+
+  ╭─────────────────────╮ ╭─────────────────────╮
+  │  0   1   2   3   4  │ │   5   6   7   8   9 │
+  │ 10  11  12  13  14  │ │  15  16  17  18  19 │
+  │ 20  21  22  23  24  │ │  25  26  27  28  29 │
+  ╰──────────╮  30  31  │ │  32  33  ╭──────────╯
+             ╰──────────╯ ╰──────────╯
+  ╭─────────────────────╮ ╭─────────────────────╮
+  │ L11 L12 L13 L14 L15 │ │ R15 R14 R13 R12 R11 │
+  │ L21 L22 L23 L24 L25 │ │ R25 R24 R23 R22 R21 │
+  │ L31 L32 L33 L34 L35 │ │ R35 R34 R33 R32 R31 │
+  ╰──────────╮  LTA LTB │ │ RTB RTA  ╭──────────╯
+             ╰──────────╯ ╰──────────╯
+
+*/
+
+#define L11 0   // left-top row
+#define L12 1
+#define L13 2
+#define L14 3
+#define L15 4  
+
+#define R15 5   // right-top row
+#define R14 6
+#define R13 7
+#define R12 8
+#define R11 9
+
+#define L21 10  // left-middle row
+#define L22 11
+#define L23 12
+#define L24 13
+#define L25 14
+
+#define R25 15  // right-middle row
+#define R24 16
+#define R23 17
+#define R22 18
+#define R21 19
+
+#define L31 20  // left-bottom row
+#define L32 21
+#define L33 22
+#define L34 23
+#define L35 24
+
+#define R35 25  // right-bottom row
+#define R34 26
+#define R33 27
+#define R32 28
+#define R31 29
+
+#define LTA 30  // left thumb keys
+#define LTB 31
+
+#define RTB 32  // right thumb keys
+#define RTA 33
