@@ -4,13 +4,21 @@ manifest:
       url-base: https://github.com/zmkfirmware
     - name: xopclabs
       url-base: https://github.com/xopclabs
+    - name: urob
+      url-base: https://github.com/urob
+
   projects:
     - name: zmk
       remote: zmkfirmware
-      revision: 
+      revision: main
       import: app/west.yml
+
     - name: zmk-lang-switch
       remote: xopclabs
-      revision: 
+      revision: main
+    - name: zmk-helpers
+      remote: urob
+      revision: main
+
   self:
     path: config
