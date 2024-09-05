@@ -6,6 +6,7 @@ manifest:
       url-base: https://github.com/xopclabs
     - name: urob
       url-base: https://github.com/urob
+
   projects:
     - name: zmk
       remote: zmkfirmware
@@ -18,5 +19,6 @@ manifest:
     - name: zmk-helpers
       remote: urob
       revision: main
+
   self:
     path: config

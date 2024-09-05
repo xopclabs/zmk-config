@@ -15,7 +15,7 @@
       default = firmware;
 
       firmware = zmk-nix.legacyPackages.${system}.buildSplitKeyboard {
-        name = "firmware";
+        name = "sweep-firmware";
 
         src = nixpkgs.lib.sourceFilesBySuffices self [ 
             ".conf" ".keymap" ".dtsi" ".yml" ".shield" ".overlay" ".defconfig" 
@@ -24,7 +24,7 @@
         board = "nice_nano_v2";
         shield = "cradio_%PART%";
 
-        zephyrDepsHash = "sha256-xi5adJl6Fp9jZdq7R6GxmAXjrlD0CWUb7IENuuyHK4M=";
+        zephyrDepsHash = "sha256-gbxDWB4pj72dqWIekPnz3grNWErup9e/QZDV4GSTBJU=";
 
         meta = {
           description = "ZMK firmware";
