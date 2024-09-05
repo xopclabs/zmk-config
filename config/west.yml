@@ -2,16 +2,15 @@ manifest:
   remotes:
     - name: zmkfirmware
       url-base: https://github.com/zmkfirmware
-    - name: urob
-      url-base: https://github.com/urob
-    - name: infused-kim
-      url-base: https://github.com/infused-kim
     - name: xopclabs
       url-base: https://github.com/xopclabs
   projects:
     - name: zmk
-      remote: xopclabs
-      revision: custom-sweep
+      remote: zmkfirmware
+      revision: 
       import: app/west.yml
+    - name: zmk-lang-switch
+      remote: xopclabs
+      revision: 
   self:
     path: config
