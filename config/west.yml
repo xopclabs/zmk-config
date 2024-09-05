@@ -1,3 +1,6 @@
+# CAUTION! 
+# Branch name comments are crucial for `nix run .#update`, so don't delete them
+
 manifest:
   remotes:
     - name: zmkfirmware
@@ -10,15 +13,15 @@ manifest:
   projects:
     - name: zmk
       remote: zmkfirmware
-      revision: main
+      revision: 0f972f1cc3ff416435036d023b62c2e1df6fad96 # main
       import: app/west.yml
 
     - name: zmk-lang-switch
       remote: xopclabs
-      revision: main
+      revision: e5d7a731676d3e1adcc62bb6291e2e7c9c4fd9f7 # main
     - name: zmk-helpers
       remote: urob
-      revision: main
+      revision: 02a97ab09065025e256d81a4eb6b1c5913002318  # main
 
   self:
     path: config
