@@ -18,6 +18,10 @@
     quick-release;
 };     
 
+&soft_off {
+    hold-time-ms = <3000>;
+};
+
 / {
 
     behaviors {
