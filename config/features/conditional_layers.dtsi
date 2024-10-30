@@ -5,5 +5,9 @@
             if-layers = <NUM FUNC>;
             then-layer = <OPTS>;
         };
+        tri_layer_game {
+            if-layers = <NUM GAME_BASE>;
+            then-layer = <OPTS>;
+        };
     };
 };

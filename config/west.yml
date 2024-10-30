@@ -13,12 +13,12 @@ manifest:
   projects:
     - name: zmk
       remote: zmkfirmware
-      revision: 0f972f1cc3ff416435036d023b62c2e1df6fad96 # main
+      revision: 1c48f64730a479115ae827c342c1063b2b8e93ca # main
       import: app/west.yml
 
     - name: zmk-lang-switch
       remote: xopclabs
-      revision: e5d7a731676d3e1adcc62bb6291e2e7c9c4fd9f7 # main
+      revision: d08661e18f27995155709dfca52744accdae3841 # main
     - name: zmk-helpers
       remote: urob
       revision: 02a97ab09065025e256d81a4eb6b1c5913002318  # main

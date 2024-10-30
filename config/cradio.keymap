@@ -81,10 +81,40 @@
         opts_layer {
             label = "OPTS";
             bindings = <
-            &none           &none       &none  &sys_reset  &bootloader  &bootloader  &sys_reset    &none         &none         &none
-            &bt BT_CLR_ALL  &none       &none  &none       &none        &none        &bt BT_SEL 0  &bt BT_SEL 1  &bt BT_SEL 2  &bt BT_SEL 3
-            &none           &bt BT_CLR  &none  &none       &none        &none        &none         &none         &none         &none
-                                               &none       &none        &none        &none
+            &none           &none       &none  &sys_reset  &bootloader     &bootloader  &sys_reset    &none         &none         &none
+            &bt BT_CLR_ALL  &none       &none  &none       &to GAME_BASE  &none        &bt BT_SEL 0  &bt BT_SEL 1  &bt BT_SEL 2  &bt BT_SEL 3
+            &none           &bt BT_CLR  &none  &none       &to GALLIUM           &none        &none         &none         &none         &none
+                                               &none       &none           &none        &none
+            >;
+        };
+
+        game_base_layer {
+            label = "GAME_BASE";
+            bindings = <
+            &kp Q      &kp W      &kp E      &kp R      &kp T            &kp Y      &kp U      &kp I      &kp O      &kp P
+            &kp A      &kp S      &kp D      &kp F      &kp G            &kp H      &kp J      &kp K      &kp L      &kp SEMI
+            &kp Z      &kp X      &kp C      &kp V      &kp B            &kp N      &kp M      &kp COMMA  &kp DOT    &kp FSLH
+                                             &kp SPACE  &sl GAME_SECOND  &lt NUM ESC  &mt LSHIFT BSPC
+            >;
+        };
+
+        game_second_layer {
+            label = "GAME_SECOND";
+            bindings = <
+            &kp N6      &kp N7      &kp N8      &kp N9      &kp N0              &kp Y      &kp U      &kp I      &kp O      &kp P
+            &kp N1      &kp N2      &kp N3      &kp N4      &kp N5              &kp H      &kp J      &kp K      &kp L      &kp SEMI
+            &kp TAB     &kp U       &kp I       &kp O       &kp P               &kp N      &kp M      &kp COMMA  &kp DOT    &kp FSLH
+                                             &kp SPACE      &sl GAME_SECOND     &lt NUM ESC  &mt LSHIFT BSPC
+            >;
+        };
+
+        gallium_base_layer {
+            label = "GALLIUM";
+            bindings = <
+            &kp B      &kp L      &kp D      &kp C      &kp V            &kp J      &kp Y      &kp O      &kp U      &kp FSLH
+            &kp N      &kp R      &kp T      &kp S      &kp G            &kp P      &kp H      &kp A      &kp E      &kp I
+            &kp X      &kp Q      &kp M      &kp W      &kp Z            &kp K      &kp F      &kp SQT    &kp MINUS  &kp DOT
+                                             &kp SPACE  &sl FUNC         &lt NUM ESC  &mt LSHIFT BSPC
             >;
         };
 

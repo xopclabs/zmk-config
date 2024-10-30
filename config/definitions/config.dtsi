@@ -5,6 +5,9 @@
 #define FUNC 4
 #define LANGCH 5
 #define OPTS 6
+#define GAME_BASE 7
+#define GAME_SECOND 8
+#define GALLIUM 9
 
 #define TAPPING_TERM 175
 #define LONG_TAPPING_TERM 300
