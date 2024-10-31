@@ -3,8 +3,8 @@
 
 manifest:
   remotes:
-    - name: zmkfirmware
-      url-base: https://github.com/zmkfirmware
+    - name: lazerwalker
+      url-base: https://github.com/lazerwalker
     - name: xopclabs
       url-base: https://github.com/xopclabs
     - name: urob
@@ -12,8 +12,8 @@ manifest:
 
   projects:
     - name: zmk
-      remote: zmkfirmware
-      revision: 1c48f64730a479115ae827c342c1063b2b8e93ca # main
+      remote: lazerwalker
+      revision: c15c39126aa844b0db8cb0b233463bf17f5c6523 # plover-hid-hog-attempt
       import: app/west.yml
 
     - name: zmk-lang-switch
@@ -21,7 +21,7 @@ manifest:
       revision: d08661e18f27995155709dfca52744accdae3841 # main
     - name: zmk-helpers
       remote: urob
-      revision: 02a97ab09065025e256d81a4eb6b1c5913002318  # main
+      revision: 230c7e18ee3c82325352287db29b59f53f20fa2a  # main
 
   self:
     path: config
