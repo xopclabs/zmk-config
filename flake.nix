@@ -23,8 +23,9 @@
 
         board = "nice_nano_v2";
         shield = "cradio_%PART%";
+        extraWestBuildFlags = [ "-S zmk-usb-logging" ];
 
-        zephyrDepsHash = "sha256-RW8UO2pcU+t0EIOFP4tvlWX0YGBeWyNLn9ffFe0peq0=";
+        zephyrDepsHash = "sha256-/VaKrYv45ErPQJjYVlsEgnN/58Z5xeHdlsi/KmDVOQg=";
 
         meta = {
           description = "ZMK firmware";
