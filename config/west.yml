@@ -3,8 +3,9 @@
 
 manifest:
   remotes:
-    - name: zmkfirmware
-      url-base: https://github.com/zmkfirmware
+    - name: steno
+      url-base: https://github.com/lazerwalker
+      #url-base: https://github.com/dnaq
     - name: xopclabs
       url-base: https://github.com/xopclabs
     - name: urob
@@ -12,8 +13,8 @@ manifest:
 
   projects:
     - name: zmk
-      remote: zmkfirmware
-      revision: 158bb318635a9e850907533c6a41776656593fb3 # main
+      remote: steno
+      revision: c15c39126aa844b0db8cb0b233463bf17f5c6523 # plover-hid-hog-attempt
       import: app/west.yml
 
     - name: zmk-lang-switch
