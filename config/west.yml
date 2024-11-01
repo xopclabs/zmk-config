@@ -3,8 +3,10 @@
 
 manifest:
   remotes:
-    - name: lazerwalker
-      url-base: https://github.com/lazerwalker
+    - name: steno
+      #url-base: https://github.com/lazerwalker
+      url-base: https://github.com/dnaq
+
     - name: xopclabs
       url-base: https://github.com/xopclabs
     - name: urob
@@ -12,8 +14,8 @@ manifest:
 
   projects:
     - name: zmk
-      remote: lazerwalker
-      revision: c15c39126aa844b0db8cb0b233463bf17f5c6523 # plover-hid-hog-attempt
+      remote: steno
+      revision: bf9234c602bdf61016f16aa6c2ba179b8ab1623f # plover-hid-hog-attempt
       import: app/west.yml
 
     - name: zmk-lang-switch
