@@ -22,7 +22,7 @@
         shield = "cradio_%PART%";
         # extraWestBuildFlags = [ "-S zmk-usb-logging" ];
 
-        zephyrDepsHash = "sha256-1BAmVBqDO5z/i17b5nsMLP0z1vk7DzHb2TwpkAKukiU=";
+        zephyrDepsHash = "sha256-Y7mY9if+bBIRzlzITzL7HPaqxq6u+1EUmes2fJGaz0U=";
 
         meta = {
           description = "ZMK firmware";
