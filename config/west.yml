@@ -4,9 +4,7 @@
 manifest:
   remotes:
     - name: steno
-      #url-base: https://github.com/lazerwalker
-      url-base: https://github.com/dnaq
-
+      url-base: https://github.com/lazerwalker
     - name: xopclabs
       url-base: https://github.com/xopclabs
     - name: urob
@@ -15,12 +13,12 @@ manifest:
   projects:
     - name: zmk
       remote: steno
-      revision: bf9234c602bdf61016f16aa6c2ba179b8ab1623f # plover-hid-hog-attempt
+      revision: c15c39126aa844b0db8cb0b233463bf17f5c6523 # plover-hid-hog-attempt
       import: app/west.yml
 
     - name: zmk-lang-switch
       remote: xopclabs
-      revision: d08661e18f27995155709dfca52744accdae3841 # main
+      revision: 8aeb530357b348c7ec0b1e43f0551dd0dcb97892 # main
     - name: zmk-helpers
       remote: urob
       revision: 230c7e18ee3c82325352287db29b59f53f20fa2a  # main
