@@ -7,7 +7,8 @@
 #define OPTS 6
 #define GAME_BASE 7
 #define GAME_SECOND 8
-#define GALLIUM 9
+#define STENO 9
+#define GALLIUM 10
 
 #define TAPPING_TERM 175
 #define LONG_TAPPING_TERM 300

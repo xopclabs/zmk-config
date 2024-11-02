@@ -17,15 +17,12 @@
       firmware = zmk-nix.legacyPackages.${system}.buildSplitKeyboard {
         name = "sweep-firmware";
 
-        src = nixpkgs.lib.sourceFilesBySuffices self [ 
-            ".conf" ".keymap" ".dtsi" ".yml" ".shield" ".overlay" ".defconfig" 
-        ];
-
+        src = ./.;
         board = "nice_nano_v2";
         shield = "cradio_%PART%";
-        extraWestBuildFlags = [ "-S zmk-usb-logging" ];
+        # extraWestBuildFlags = [ "-S zmk-usb-logging" ];
 
-        zephyrDepsHash = "sha256-/VaKrYv45ErPQJjYVlsEgnN/58Z5xeHdlsi/KmDVOQg=";
+        zephyrDepsHash = "sha256-1BAmVBqDO5z/i17b5nsMLP0z1vk7DzHb2TwpkAKukiU=";
 
         meta = {
           description = "ZMK firmware";

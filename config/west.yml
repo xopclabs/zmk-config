@@ -5,7 +5,6 @@ manifest:
   remotes:
     - name: steno
       url-base: https://github.com/lazerwalker
-      #url-base: https://github.com/dnaq
     - name: xopclabs
       url-base: https://github.com/xopclabs
     - name: urob
@@ -19,7 +18,7 @@ manifest:
 
     - name: zmk-lang-switch
       remote: xopclabs
-      revision: d08661e18f27995155709dfca52744accdae3841 # main
+      revision: 8aeb530357b348c7ec0b1e43f0551dd0dcb97892 # main
     - name: zmk-helpers
       remote: urob
       revision: 230c7e18ee3c82325352287db29b59f53f20fa2a  # main
