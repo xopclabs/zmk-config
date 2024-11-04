@@ -68,8 +68,14 @@
           flashPackages.${name}
       ) keyboards;
 
+      # Get the first keyboard name for default package
+      firstKeyboard = builtins.head (builtins.attrNames keyboards);
+      defaultFirmware = firmwarePackages.${firstKeyboard};
+
     in {
-      default = firmwarePackages.sweep;
+      default = defaultFirmware;
+      # Make default firmware also available as 'firmware' for the update script
+      firmware = defaultFirmware;
     } // firmwarePackages // flashTargets // {
       update = zmk-nix.packages.${system}.update;
     });
