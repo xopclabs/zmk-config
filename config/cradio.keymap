@@ -9,6 +9,17 @@
 #include "zmk-helpers/helper.h"
 #include "zmk-helpers/key-labels/34.h"
 
+#define ENG 0
+#define RU 1
+#define GALLIUM 2
+#define GAME_BASE 3
+#define GAME_SECOND 4
+#define SYMB 5
+#define NUM 6
+#define FUNC 7
+#define LANGCH 8
+#define OPTS 9
+
 #include "definitions/config.dtsi"
 #include "definitions/russian.dtsi"
 #include "features/behaviors.dtsi"
@@ -36,16 +47,6 @@
             &kp RU_A   &kp RU_R   &kp RU_S   &kp RU_T   &kp RU_G     &kp RU_M  &kp RU_N  &kp RU_E    &kp RU_I   &kp RU_O
             &kp RU_CH  &kp RU_C   &kp RU_K   &kp RU_D   &kp RU_YI    &kp RU_Z  &kp RU_V  &ru_sh_sch  &kp RU_YU  &kp RU_IE
                                        &lt SYMB SPACE   &sl FUNC     &lt NUM ESC  &mt LSHIFT BSPC
-            >;
-        };
-
-        steno_layer { // STENO
-            display-name = "Steno";
-            bindings = <
-            &none      &none      &none      &none      &mo FUNC      &mo FUNC   &none      &none      &none      &none
-            &kp PLV_NM &kp PLV_TL &kp PLV_PL &kp PLV_HL &kp PLV_ST    &kp PLV_FR &kp PLV_PR &kp PLV_LR &kp PLV_TR &kp PLV_DR
-            &kp PLV_SL &kp PLV_KL &kp PLV_WL &kp PLV_RL &kp PLV_ST    &kp PLV_RR &kp PLV_BR &kp PLV_GR &kp PLV_SR &kp PLV_ZR
-                                             &kp PLV_A  &kp PLV_O     &kp PLV_E  &kp PLV_U
             >;
         };
 
@@ -123,7 +124,7 @@
             display-name = "Options";
             bindings = <
             &soft_off       &none       &none       &sys_reset  &bootloader     &bootloader  &sys_reset    &none         &none         &soft_off
-            &bt BT_CLR_ALL  &none       &tog STENO  &none       &tog GAME_BASE  &none        &bt BT_SEL 0  &bt BT_SEL 1  &bt BT_SEL 2  &bt BT_SEL 3
+            &bt BT_CLR_ALL  &none       &none       &none       &tog GAME_BASE  &none        &bt BT_SEL 0  &bt BT_SEL 1  &bt BT_SEL 2  &bt BT_SEL 3
             &none           &bt BT_CLR  &none       &none       &tog GALLIUM    &none        &none         &none         &none         &none
                                                     &none       &none           &none        &none
             >;

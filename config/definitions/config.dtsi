@@ -1,15 +1,3 @@
-#define ENG 0
-#define RU 1
-#define STENO 2
-#define GALLIUM 3
-#define GAME_BASE 4
-#define GAME_SECOND 5
-#define SYMB 6
-#define NUM 7
-#define FUNC 8
-#define LANGCH 9
-#define OPTS 10
-
 #define TAPPING_TERM 175
 #define LONG_TAPPING_TERM 300
 #define STICKY_RELEASE 500

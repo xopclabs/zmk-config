@@ -9,6 +9,18 @@
 #include "zmk-helpers/helper.h"
 #include "zmk-helpers/key-labels/42.h"
 
+#define ENG 0
+#define RU 1
+#define STENO 2
+#define GALLIUM 3
+#define GAME_BASE 4
+#define GAME_SECOND 5
+#define SYMB 6
+#define NUM 7
+#define FUNC 8
+#define LANGCH 9
+#define OPTS 10
+
 #include "definitions/config.dtsi"
 #include "definitions/russian.dtsi"
 #include "features/behaviors.dtsi"
