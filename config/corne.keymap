@@ -9,9 +9,9 @@
 #include "zmk-helpers/helper.h"
 #include "zmk-helpers/key-labels/42.h"
 
-#define ENG 0
-#define RU 1
-#define STENO 2
+#define STENO 0
+#define ENG 1
+#define RU 2
 #define GALLIUM 3
 #define GAME_BASE 4
 #define GAME_SECOND 5
@@ -31,6 +31,16 @@
     keymap {
         compatible = "zmk,keymap";
 
+        steno_layer { // STENO
+            display-name = "Steno";
+            bindings = <
+            &none &kp PLV_NM &kp PLV_TL &kp PLV_PL &kp PLV_HL &kp PLV_ST    &kp PLV_ST &kp PLV_FR &kp PLV_PR &kp PLV_LR &kp PLV_TR &kp PLV_DR
+            &none &kp PLV_SL &kp PLV_KL &kp PLV_WL &kp PLV_RL &kp PLV_ST    &kp PLV_ST &kp PLV_RR &kp PLV_BR &kp PLV_GR &kp PLV_SR &kp PLV_ZR
+            &none &mo FUNC   &none      &none      &none      &none         &none      &none      &none      &none      &none      &none
+                                        &none      &kp PLV_A  &kp PLV_O     &kp PLV_E  &kp PLV_U  &none
+            >;
+        };
+
         eng_layer { // ENG
             display-name = "English";
             bindings = <
@@ -48,16 +58,6 @@
             &none &kp RU_A   &kp RU_R   &kp RU_S   &kp RU_T   &kp RU_G     &kp RU_M  &kp RU_N  &kp RU_E    &kp RU_I   &kp RU_O  &none 
             &none &kp RU_CH  &kp RU_C   &kp RU_K   &kp RU_D   &kp RU_YI    &kp RU_Z  &kp RU_V  &ru_sh_sch  &kp RU_YU  &kp RU_IE &none 
                                         &none  &lt SYMB SPACE &sl FUNC     &lt NUM ESC  &mt LSHIFT BSPC &none
-            >;
-        };
-
-        steno_layer { // STENO
-            display-name = "Steno";
-            bindings = <
-            &none &mo FUNC   &none      &none      &none      &mo FUNC      &mo FUNC   &none      &none      &none      &mo FUNC   &none
-            &none &kp PLV_NM &kp PLV_TL &kp PLV_PL &kp PLV_HL &kp PLV_ST    &kp PLV_ST &kp PLV_FR &kp PLV_PR &kp PLV_LR &kp PLV_TR &kp PLV_DR
-            &none &kp PLV_SL &kp PLV_KL &kp PLV_WL &kp PLV_RL &kp PLV_ST    &kp PLV_ST &kp PLV_RR &kp PLV_BR &kp PLV_GR &kp PLV_SR &kp PLV_ZR
-                                        &none      &kp PLV_A  &kp PLV_O     &kp PLV_E  &kp PLV_U  &none
             >;
         };
 
@@ -135,7 +135,7 @@
             display-name = "Options";
             bindings = <
             &none &soft_off      &none      &none      &sys_reset  &bootloader     &bootloader  &sys_reset    &none         &none         &soft_off    &none 
-            &none &bt BT_CLR_ALL &none      &tog STENO &none       &tog GAME_BASE  &none        &bt BT_SEL 0  &bt BT_SEL 1  &bt BT_SEL 2  &bt BT_SEL 3 &none 
+            &none &bt BT_CLR_ALL &none      &tog ENG   &none       &tog GAME_BASE  &none        &bt BT_SEL 0  &bt BT_SEL 1  &bt BT_SEL 2  &bt BT_SEL 3 &none 
             &none &studio_unlock &bt BT_CLR &none      &none       &tog GALLIUM    &none        &none         &none         &none         &none        &none 
                                             &none      &none       &none              &none        &none         &none
             >;
