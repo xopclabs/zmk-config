@@ -14,10 +14,11 @@
 #define GAME_BASE 2
 #define GAME_SECOND 3
 #define SYMB 4
-#define NUM 5
-#define FUNC 6
-#define LANGCH 7
-#define OPTS 8
+#define ACCENT 5
+#define NUM 6
+#define FUNC 7
+#define LANGCH 8
+#define OPTS 9
 
 #include "definitions/config.dtsi"
 #include "definitions/russian.dtsi"
@@ -32,7 +33,7 @@
         eng_layer { // ENG
             display-name = "English";
             bindings = <
-            &kp Q      &kp W      &kp F      &kp P      &kp B          &kp J      &kp L      &kp U      &kp Y      &kp RALT
+            &kp Q      &kp W      &kp F      &kp P      &kp B          &kp J      &kp L      &kp U      &kp Y      &sl ACCENT
             &kp A      &kp R      &kp S      &kp T      &kp G          &kp M      &kp N      &kp E      &kp I      &kp O
             &kp Z      &kp X      &kp C      &kp D      &kp V          &kp K      &kp H      &kp COMMA  &kp DOT    &kp FSLH
                                        &lt SYMB SPACE   &sl FUNC      &lt NUM ESC  &mt LSHIFT BSPC
@@ -76,6 +77,16 @@
             &kp_en SQT    &kp_en LBKT  &kp_en RBKT   &kp_en EQUAL  &kp_en PLUS      &kp_en STAR   &kp_en UNDER  &kp_en LPAR   &kp_en RPAR  &kp_en MINUS
             &kp_en COLON  &kp_en SEMI  &kp_en DQT    &kp_en CARET  &kp_en DLLR      &kp_en LBRC   &kp_en RBRC   &kp_en GRAVE  &kp_en AMPS  &kp_en PIPE
                                             &kp SPACE  &kp BSPC    &kp_en PERIOD    &kp_en COMMA
+            >;
+        };
+
+        accent_layer { // ACCENT
+            display-name = "Accent";
+            bindings = <
+            &kp RA(TILDE) &none        &none      &kp RA(EXCL)  &none          &kp RA(SLASH) &kp RA(QMARK) &kp RA(LT)    &kp RA(GT) &kp RALT
+            &kp RA(SQT)   &none        &none      &kp RA(EQUAL) &none          &none         &none         &none         &none      &none
+            &none         &kp RA(SEMI) &none      &kp RA(CARET) &none          &none         &none         &kp RA(GRAVE) &none      &none
+                                                  &none         &none          &none         &kp RA(COMMA)
             >;
         };
 
