@@ -37,10 +37,10 @@
         COMBO_L(eng, SLIGHTLY_RELAXED_COMBO_TERM, LT2 LT1, &ls ENG, RU)
 
         // Restrict left-hand combos from steno and game layers
-        COMBO_L(esc, TIGHT_COMBO_TERM, LM3 LM2, &kp ESC, ENG RU SYMB NUM GALLIUM)
-        COMBO_L(tab, TIGHT_COMBO_TERM, LM2 LM1, &kp TAB, ENG RU SYMB NUM GALLIUM)
+        COMBO_L(esc, TIGHT_COMBO_TERM, LM3 LM2, &kp ESC, ENG RU SYMB NUM)
+        COMBO_L(tab, TIGHT_COMBO_TERM, LM2 LM1, &kp TAB, ENG RU SYMB NUM)
         // Restrict right-hand combos from steno layer
-        COMBO_L(enter, COMBO_TERM, RB1 RB2, &kp ENTER, ENG RU SYMB NUM GALLIUM GAME_BASE)
-        COMBO_L(bscpword, SLIGHTLY_RELAXED_COMBO_TERM, RT1 RT2, &kp LC(BSPC), ENG RU SYMB NUM GALLIUM GAME_BASE)
+        COMBO_L(enter, COMBO_TERM, RB1 RB2, &kp ENTER, ENG RU SYMB NUM GAME_BASE)
+        COMBO_L(bscpword, SLIGHTLY_RELAXED_COMBO_TERM, RT1 RT2, &kp LC(BSPC), ENG RU SYMB NUM GAME_BASE)
     };
 };

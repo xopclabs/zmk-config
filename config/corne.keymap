@@ -13,14 +13,13 @@
 #define STENO 0
 #define ENG 1
 #define RU 2
-#define GALLIUM 3
-#define GAME_BASE 4
-#define GAME_SECOND 5
-#define SYMB 6
-#define NUM 7
-#define FUNC 8
-#define LANGCH 9
-#define OPTS 10
+#define GAME_BASE 3
+#define GAME_SECOND 4
+#define SYMB 5
+#define NUM 6
+#define FUNC 7
+#define LANGCH 8
+#define OPTS 9
 
 #include "definitions/config.dtsi"
 #include "definitions/russian.dtsi"
@@ -45,7 +44,7 @@
         eng_layer { // ENG
             display-name = "English";
             bindings = <
-            &none &kp Q      &kp W      &kp F      &kp P      &kp B          &kp J      &kp L      &kp U      &kp Y      &kp SEMI &none
+            &none &kp Q      &kp W      &kp F      &kp P      &kp B          &kp J      &kp L      &kp U      &kp Y      &kp RALT &none
             &none &kp A      &kp R      &kp S      &kp T      &kp G          &kp M      &kp N      &kp E      &kp I      &kp O    &none
             &none &kp Z      &kp X      &kp C      &kp D      &kp V          &kp K      &kp H      &kp COMMA  &kp DOT    &kp FSLH &none
                                         &none  &lt SYMB SPACE &sl FUNC       &lt NUM ESC  &mt LSHIFT BSPC &none
@@ -58,16 +57,6 @@
             &none &kp RU_F   &kp RU_YA  &ru_ss_hs  &kp RU_P   &ru_b_jo     &kp RU_H  &kp RU_L  &kp RU_Y    &kp RU_JI  &kp RU_ZH &none 
             &none &kp RU_A   &kp RU_R   &kp RU_S   &kp RU_T   &kp RU_G     &kp RU_M  &kp RU_N  &kp RU_E    &kp RU_I   &kp RU_O  &none 
             &none &kp RU_CH  &kp RU_C   &kp RU_K   &kp RU_D   &kp RU_YI    &kp RU_Z  &kp RU_V  &ru_sh_sch  &kp RU_YU  &kp RU_IE &none 
-                                        &none  &lt SYMB SPACE &sl FUNC     &lt NUM ESC  &mt LSHIFT BSPC &none
-            >;
-        };
-
-        gallium_layer { // GALLIUM
-            display-name = "Gallium";
-            bindings = <
-            &none &kp B      &kp L      &kp D      &kp C      &kp V    &kp J      &kp Y      &kp O      &kp U      &kp FSLH &none
-            &none &kp N      &kp R      &kp T      &kp S      &kp G    &kp P      &kp H      &kp A      &kp E      &kp I    &none
-            &none &kp X      &kp Q      &kp M      &kp W      &kp Z    &kp K      &kp F      &kp SQT    &kp MINUS  &kp DOT  &none
                                         &none  &lt SYMB SPACE &sl FUNC     &lt NUM ESC  &mt LSHIFT BSPC &none
             >;
         };
@@ -137,7 +126,7 @@
             bindings = <
             &none &soft_off      &none      &none      &sys_reset        &bootloader     &bootloader  &sys_reset    &none         &none         &soft_off    &none 
             &none &bt BT_CLR_ALL &none      &tog ENG   &none             &tog GAME_BASE  &none        &bt BT_SEL 0  &bt BT_SEL 1  &bt BT_SEL 2  &bt BT_SEL 3 &none 
-            &none &studio_unlock &bt BT_CLR &none      &ext_power EP_OFF &tog GALLIUM    &none        &none         &none         &none         &none        &none 
+            &none &studio_unlock &bt BT_CLR &none      &ext_power EP_OFF &none           &none        &none         &none         &none         &none        &none 
                                             &none      &none             &none           &none        &none         &none
             >;
         };

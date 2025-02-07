@@ -41,7 +41,7 @@
         inherit (config) board;
         inherit shield;
         src = ./.;
-        zephyrDepsHash = "sha256-pPc6rxw9kIsWMCfJtjr7UOc2DD6yPftwOdZeKEtoW0o=";
+        zephyrDepsHash = "sha256-IhWmYnOJEhj5j9nxR8hAGXeCy2oMaNYi+SQOYA8tg8M=";
         meta = {
           description = "ZMK firmware for ${name}";
           license = nixpkgs.lib.licenses.mit;
