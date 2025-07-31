@@ -26,6 +26,16 @@
 / {
 
     behaviors {
+        skl: sticky_key_layer {
+            compatible = "zmk,behavior-sticky-key-layer";
+            #binding-cells = <1>;
+            bindings = <&kp>;
+            target-layer = <ENG>;
+            release-after-ms = <STICKY_RELEASE>;
+            quick-release;
+            ignore-modifiers;
+        };
+
         ls: lang_switch {
             compatible = "zmk,behavior-lang-switch";
             #binding-cells = <1>;

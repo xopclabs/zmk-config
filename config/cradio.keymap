@@ -103,9 +103,9 @@
         func_layer { // FUNC
             display-name = "Functional";
             bindings = <
-            &kp F1   &kp F2   &kp F3       &kp F4    &kp F5            &kp F6       &kp F7        &kp F8      &kp F9     &kp F10
-            &sk LGUI &sk LALT &sk LSHIFT   &sk LCTRL &kp C_VOL_UP      &kp PSCRN    &kp LEFT      &kp DOWN    &kp UP     &kp RIGHT
-            &none    &none    &out OUT_TOG &kp DEL   &kp C_VOL_DN      &none        &sl LANGCH    &none       &kp F11    &kp F12
+            &kp F1    &kp F2    &kp F3        &kp F4     &kp F5            &kp F6       &kp F7        &kp F8      &kp F9     &kp F10
+            &skl LGUI &skl LALT &skl LSHIFT   &skl LCTRL &kp C_VOL_UP      &kp PSCRN    &kp LEFT      &kp DOWN    &kp UP     &kp RIGHT
+            &none     &none     &out OUT_TOG  &kp DEL    &kp C_VOL_DN      &none        &sl LANGCH    &none       &kp F11    &kp F12
                                            &none     &none             &lt NUM ESC  &kp LSHIFT
             >;
         };

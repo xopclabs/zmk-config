@@ -18,10 +18,10 @@ manifest:
 
     - name: zmk-lang-switch
       remote: xopclabs
-      revision: 8aeb530357b348c7ec0b1e43f0551dd0dcb97892 # main
+      revision: 738bcb718a2a7288995386b17aba874e8cbd9daf # main
     - name: zmk-helpers
       remote: urob
-      revision: 230c7e18ee3c82325352287db29b59f53f20fa2a  # main
+      revision: d5753b4085049a03cec65f739e04da73bb20a1ff  # main
 
   self:
     path: config
