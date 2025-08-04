@@ -42,7 +42,7 @@
         inherit shield;
         src = ./.;
         config = "config";  # Explicitly set config directory
-        zephyrDepsHash = "sha256-VELva0uhCruegWwVReiUjohehVPO04vFMrgQQErTgzI=";
+        zephyrDepsHash = "sha256-mYS+5XlKjCy6KaRi22cwUHLXPzKKOF4emFfXppizrQ0=";
         meta = {
           description = "ZMK firmware for ${name}";
           license = nixpkgs.lib.licenses.mit;
