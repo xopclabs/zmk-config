@@ -83,10 +83,10 @@
         accent_layer { // ACCENT
             display-name = "Accent";
             bindings = <
-            &kp RA(TILDE) &none        &none      &kp RA(EXCL)  &none          &kp RA(SLASH) &kp RA(QMARK) &kp RA(LT)    &kp RA(GT) &kp RALT
-            &kp RA(SQT)   &none        &none      &kp RA(EQUAL) &none          &none         &none         &none         &none      &none
-            &none         &kp RA(SEMI) &none      &kp RA(CARET) &none          &none         &none         &kp RA(GRAVE) &none      &none
-                                                  &none         &none          &none         &kp RA(COMMA)
+            &kp RA(TILDE) &none        &none       &kp RA(EXCL)  &none          &kp RA(SLASH) &kp RA(QMARK) &kp RA(LT)    &kp RA(GT) &kp RALT
+            &kp RA(SQT)   &none        &none       &kp RA(EQUAL) &none          &none         &none         &none         &none      &none
+            &kp RA(COLON) &kp RA(SEMI) &kp RA(DQT) &kp RA(CARET) &none          &none         &none         &kp RA(GRAVE) &none      &none
+                                                   &none         &none          &none         &kp RA(COMMA)
             >;
         };
 
