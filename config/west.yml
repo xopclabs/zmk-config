@@ -13,7 +13,7 @@ manifest:
   projects:
     - name: zmk
       remote: steno
-      revision: c15c39126aa844b0db8cb0b233463bf17f5c6523 # plover-hid-hog-attempt
+      revision: 40b2031c6df42611148656f162593a95b4c5c4ef # multiple-features
       import: app/west.yml
 
     - name: zmk-lang-switch
@@ -21,7 +21,7 @@ manifest:
       revision: 42c9561cad59d8ea8ed0619e678767916c8851ef # main
     - name: zmk-helpers
       remote: urob
-      revision: b1548efd28d2cc64b9506654e6883695c258190f  # main
+      revision: bc114546392b4615ac90a99140eaf21dde31209d  # main
 
   self:
     path: config
